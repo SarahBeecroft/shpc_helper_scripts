@@ -319,7 +319,7 @@ tools:
 
   sra-tools:
     repo: quay.io/biocontainers
-    top_alias: fasterq-dump  # CHECK: suite, no single entrypoint
+    top_alias: abi-dump.3
     versions:
       - "3.4.1--2_linux_64"
 
