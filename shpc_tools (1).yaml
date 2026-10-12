@@ -1,0 +1,354 @@
+# shpc container registry manifest
+# path_to_yaml is derivable: {registry_root}/{repo}/{tool}/container.yaml
+
+registry_root: $MYSOFTWARE/setonix/${PAWSEY_STACK_VERSION}/shpc_registry
+
+tools:
+
+  alphafold2:
+    repo: quay.io/pawsey
+    top_alias: run_alphafold.py
+    versions:
+      - "v2.3.2_rocm6.2.4"
+
+  alphafold3:
+    repo: quay.io/pawsey
+    top_alias: run_alphafold.py
+    versions:
+      - "v3.0.1_rocm7.1.1"
+
+  antismash:
+    repo: quay.io/biocontainers
+    top_alias: antismash
+    versions:
+      - "8.0.4--pyhdfd78af_1"
+
+  aws-cli:
+    repo: amazon
+    top_alias: aws
+    versions:
+      - "2.13.0"
+
+  bamtools:
+    repo: quay.io/biocontainers
+    top_alias: bamtools
+    versions:
+      - "2.5.2--hd03093a_0"
+
+  bbmap:
+    repo: quay.io/biocontainers
+    top_alias: bbmap.sh
+    versions:
+      - "38.96--h5c4e2a8_0"
+
+  bcftools:
+    repo: quay.io/biocontainers
+    top_alias: bcftools
+    versions:
+      - "1.24--h118bc1c_2"
+
+  bedtools:
+    repo: quay.io/biocontainers
+    top_alias: bedtools
+    versions:
+      - "2.31.1--h13024bc_3"
+
+  blast:
+    repo: quay.io/biocontainers
+    top_alias: blastn
+    versions:
+      - "2.17.0--h66d330f_0"
+
+  boltz2:
+    repo: quay.io/pawsey
+    top_alias: boltz
+    versions:
+      - "v2.2.1_rocm6.4.1"
+
+  bowtie2:
+    repo: quay.io/biocontainers
+    top_alias: bowtie2
+    versions:
+      - "2.5.4--he96a11b_7"
+
+  bracken:
+    repo: quay.io/biocontainers
+    top_alias: bracken
+    versions:
+      - "3.1p1--hc52dbad_0"
+
+  bwa:
+    repo: quay.io/biocontainers
+    top_alias: bwa
+    versions:
+      - "0.7.19--h577a1d6_1"
+
+  bwa-mem2:
+    repo: quay.io/biocontainers
+    top_alias: bwa-mem2
+    versions:
+      - "2.3--he70b90d_0"
+
+  canu:
+    repo: quay.io/biocontainers
+    top_alias: canu
+    versions:
+      - "2.3--h636b4d1_3"
+
+  chopper:
+    repo: quay.io/biocontainers
+    top_alias: chopper
+    versions:
+      - "0.13.0--h7f49ad2_0"
+
+  chromap:
+    repo: quay.io/biocontainers
+    top_alias: chromap
+    versions:
+      - "0.3.2--h077b44d_0"
+
+  clustalo:
+    repo: quay.io/biocontainers
+    top_alias: clustalo
+    versions:
+      - "1.2.4--h87f3376_5"
+
+  colabfold:
+    repo: quay.io/pawsey
+    top_alias: colabfold_batch
+    versions:
+      - "1.6.1_rocm7.0.2"
+
+  cutadapt:
+    repo: quay.io/biocontainers
+    top_alias: cutadapt
+    versions:
+      - "3.7--py38hbff2b2d_0"
+
+  diamond:
+    repo: quay.io/biocontainers
+    top_alias: diamond
+    versions:
+      - "2.2.4--he361c42_0"
+
+  esmfold_openfold:
+    repo: quay.io/pawsey
+    top_alias: esm-fold
+    versions:
+      - "rocm6.3.3"
+
+  fastp:
+    repo: quay.io/biocontainers
+    top_alias: fastp
+    versions:
+      - "1.1.0--heae3180_0"
+
+  fastqc:
+    repo: quay.io/biocontainers
+    top_alias: fastqc
+    versions:
+      - "0.11.9--hdfd78af_1"
+
+  filtlong:
+    repo: quay.io/biocontainers
+    top_alias: filtlong
+    versions:
+      - "0.3.1--h077b44d_0"
+
+  freebayes:
+    repo: quay.io/biocontainers
+    top_alias: freebayes
+    versions:
+      - "1.3.10--hbefcdb2_0"
+
+  freebindcraft:
+    repo: quay.io/pawsey
+    top_alias: bindcraft.py
+    versions:
+      - "v1.0.5_rocm7.0.2_nopyrosetta"
+
+  gatk4:
+    repo: quay.io/biocontainers
+    top_alias: gatk
+    versions:
+      - "4.6.2.0--py310hdfd78af_1"
+
+  hisat2:
+    repo: quay.io/biocontainers
+    top_alias: hisat2
+    versions:
+      - "2.2.2--h503566f_0"
+
+  humann:
+    repo: quay.io/biocontainers
+    top_alias: humann
+    versions:
+      - "3.9--py312hdfd78af_0"
+
+  interproscan:
+    repo: quay.io/sarahbeecroft9
+    top_alias: interproscan.sh
+    versions:
+      - "5.56-89.0"
+
+  kraken2:
+    repo: quay.io/biocontainers
+    top_alias: kraken2
+    versions:
+      - "2.17.1--pl5321h077b44d_0"
+
+  macs3:
+    repo: quay.io/biocontainers
+    top_alias: macs3
+    versions:
+      - "3.0.4--py310h5a5e57a_0"
+
+  maker:
+    repo: quay.io/biocontainers
+    top_alias: maker
+    versions:
+      - "3.01.03--pl5262h8f1cd36_2"
+
+  megahit:
+    repo: quay.io/biocontainers
+    top_alias: megahit
+    versions:
+      - "1.2.9--haf24da9_8"
+
+  metaphlan:
+    repo: quay.io/biocontainers
+    top_alias: metaphlan
+    versions:
+      - "4.2.6--pyhdfd78af_0"
+
+  minimap2:
+    repo: quay.io/biocontainers
+    top_alias: minimap2
+    versions:
+      - "2.31--h118bc1c_0"
+
+  mmseqs2:
+    repo: ghcr.io/soedinglab
+    top_alias: mmseqs
+    versions:
+      - "master-rocm7"
+
+  mrbayes:
+    repo: quay.io/biocontainers
+    top_alias: mb
+    versions:
+      - "3.2.7--h5465cc4_4"
+
+  multiqc:
+    repo: quay.io/biocontainers
+    top_alias: multiqc
+    versions:
+      - "1.35--pyhdfd78af_1"
+
+  mummer:
+    repo: quay.io/biocontainers
+    top_alias: mummer
+    versions:
+      - "3.23--pl5321h87f3376_14"
+
+  ncbi-datasets-cli:
+    repo: quay.io/biocontainers
+    top_alias: datasets
+    versions:
+      - "14.26.0"
+
+  nohuman:
+    repo: quay.io/biocontainers
+    top_alias: nohuman
+    versions:
+      - "0.5.1--hfa8f182_1"
+
+  prodigal:
+    repo: quay.io/biocontainers
+    top_alias: prodigal
+    versions:
+      - "2.60--1"
+
+  prodigal-gv:
+    repo: quay.io/biocontainers
+    top_alias: prodigal-gv
+    versions:
+      - "2.11.0--h577a1d6_5"
+
+  rfdiffusion:
+    repo: quay.io/pawsey
+    top_alias: run_inference.py
+    versions:
+      - "v1.1.0-rocm7.0.0_dgl2.4.0"
+
+  rgi:
+    repo: quay.io/biocontainers
+    top_alias: rgi
+    versions:
+      - "6.0.8--pyh05cac1d_0"
+
+  sambamba:
+    repo: quay.io/biocontainers
+    top_alias: sambamba
+    versions:
+      - "1.0--h98b6b92_0"
+
+  samtools:
+    repo: quay.io/biocontainers
+    top_alias: samtools
+    versions:
+      - "1.24--h9dcdb79_1"
+
+  seqkit:
+    repo: quay.io/biocontainers
+    top_alias: seqkit
+    versions:
+      - "2.13.0--he881be0_0"
+
+  singlem:
+    repo: quay.io/biocontainers
+    top_alias: singlem
+    versions:
+      - "0.21.3--pyhdfd78af_0"
+
+  spades:
+    repo: quay.io/biocontainers
+    top_alias: spades.py
+    versions:
+      - "4.3.0--hde4eca7_1"
+
+  sra-tools:
+    repo: quay.io/biocontainers
+    top_alias: fasterq-dump  # CHECK: suite, no single entrypoint
+    versions:
+      - "3.4.1--2_linux_64"
+
+  star:
+    repo: quay.io/biocontainers
+    top_alias: STAR
+    versions:
+      - "2.7.11b--h5ca1c30_8"
+
+  trimmomatic:
+    repo: quay.io/biocontainers
+    top_alias: trimmomatic
+    versions:
+      - "0.39--hdfd78af_2"
+
+  trinity:
+    repo: quay.io/biocontainers
+    top_alias: Trinity
+    versions:
+      - "2.13.2--hea94271_3"
+
+  vcftools:
+    repo: quay.io/biocontainers
+    top_alias: vcftools
+    versions:
+      - "0.1.16--pl5321hd03093a_7"
+
+  velvet:
+    repo: quay.io/biocontainers
+    top_alias: velveth
+    versions:
+      - "1.2.10--h7132678_5"
