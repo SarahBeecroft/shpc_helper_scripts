@@ -237,7 +237,7 @@ tools:
     repo: quay.io/biocontainers
     top_alias: mb
     versions:
-      - "3.2.7--h5465cc4_4"
+      - "3.2.7--hd0d793b_7"
 
   multiqc:
     repo: quay.io/biocontainers
